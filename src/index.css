@@ -14,11 +14,11 @@ body {
 }
 
 button {
-  outline: 1px solid gray;
-  margin: 5px;
+  /* outline: 1px solid gray; */
+  /* margin: 5px; */
   padding: 5px;
   width: 50px;
-  height: 30px;
+  height: 25px;
 }
 
 .header {
@@ -34,10 +34,28 @@ button {
   border: 1px solid #ddd;
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+}
+
 .sell-btn {
-  background: #f50537;
+  background: #e4002b;
+}
+
+.sell-btn[disabled] {
+  opacity: 0.7;
+}
+
+.amount {
+  background: #84bd00;
+  width: 40px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .buy-btn {
-  background: #2529d8;
+  background: #0085ad;
 }

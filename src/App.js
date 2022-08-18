@@ -7,9 +7,14 @@ import products from "./products.json"
 function App() {
   const [money, setMoney] = useState(2310424320000)
   const [basket, setBasket] = useState([])
+  const [total, setTotal] = useState(0)
+
 
   useEffect(() => {
-    console.log(basket)
+    const t = basket.reduce((acc, item) => {
+      return acc + (item.amount * products.find(product => product.id === item.id).price)
+    }, 0)
+    console.log(t)
   }, [basket])
 
   return (
