@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Ev",
+        "price": 1500000
+    },
+    {
+        "id": 2,
+        "title": "Araba",
+        "price": 1500000
+    },
+    {
+        "id": 3,
+        "title": "Iphone 13 Pro Max",
+        "price": 23000
+    },
+    {
+        "id": 4,
+        "title": "MacBook Pro M2",
+        "price": 32000
+    }
+]
