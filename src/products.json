@@ -1,22 +1,32 @@
 [
     {
         "id": 1,
-        "title": "Ev",
-        "price": 1500000
+        "title": "villa",
+        "price": 5000000,
+        "image": "https://villahanem.com/uploads/0-villa-hanem-kiralik-villa-berlin-1_86.jpg"
     },
     {
         "id": 2,
         "title": "Araba",
-        "price": 1500000
+        "price": 5000000,
+        "image": "https://cdn.motor1.com/images/mgl/E61G6e/s1/2023-range-rover-sport-render.webp"
     },
     {
         "id": 3,
         "title": "Iphone 13 Pro Max",
-        "price": 23000
+        "price": 23000,
+        "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/129918-8_large.jpg"
     },
     {
         "id": 4,
         "title": "MacBook Pro M2",
-        "price": 32000
+        "price": 32000,
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRZF_W2_FCLPSu92TTZi3JUZrefLDZjhgI4qATQOPqITto4Y0ldAUAmq7h5YxhOnh9fDA-61GmAWq_4QnsnLhKQ39PDqfqFpQcuLOxdno1IJ6ErxG9l-qHh&usqp=CAE"
+    },
+    {
+        "id": 5,
+        "title": "ye bitir",
+        "price": 2310424320000,
+        "image": "https://pbs.twimg.com/media/EV1imdxWkAEgvyC.jpg"
     }
 ]

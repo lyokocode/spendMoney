@@ -1,6 +1,7 @@
 import React from 'react'
+import { moneyFormat } from '../helpers'
 
-const Product = ({ product, basket, setBasket }) => {
+const Product = ({ product, basket, setBasket, total, money }) => {
 
     const basketItem = basket.find(item => item.id === product.id)
 
@@ -33,14 +34,18 @@ const Product = ({ product, basket, setBasket }) => {
 
     }
 
+
     return (
         <main className='product'>
+            <div className='image-container'>
+                <img src={product.image} alt={product.title} />
+            </div>
             <h3>{product.title}</h3>
-            <p>{product.price} ₺ </p>
+            <p>{moneyFormat(product.price)} ₺ </p>
             <div className='actions'>
-                <button className='sell-btn' onClick={removeBasket} disabled={!basketItem} >Çıkart</button>
+                <button className='sell-btn' onClick={removeBasket} disabled={!basketItem || basketItem.amount == 0} >Çıkart</button>
                 <span className='amount'>{basketItem && basketItem.amount || 0}</span>
-                <button className='buy-btn ' onClick={addBasket}>Ekle</button>
+                <button className='buy-btn' onClick={addBasket} disabled={total + product.price > money}>Ekle</button>
             </div>
         </main >
     )

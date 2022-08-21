@@ -22,16 +22,56 @@ button {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
   text-align: center;
+  letter-spacing: 1px;
   padding: 20px;
-  font-size: 26px;
+  font-size: 30px;
+  color: white;
+  background: rgb(114, 62, 188);
+  background: linear-gradient(255deg, rgba(114, 62, 188, 0.861782212885154) 0%, rgba(162, 62, 188, 1) 100%);
+}
+
+.header .money {
+  color: rgb(175, 175, 175);
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.products {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .product {
+
   padding: 10px;
+  width: calc(40% - 15px);
+  height: 100%;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #ddd;
+}
+
+.image-container {
+  width: 500px;
+  height: 500px;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  /* width: 100%; */
+  object-fit: cover;
 }
 
 .actions {
@@ -58,4 +98,25 @@ button {
 
 .buy-btn {
   background: #0085ad;
+}
+
+.reset-btn {
+  width: 100px;
+  background-color: #a51890;
+  height: 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    padding: 20px 10px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 20px 5px;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
 }
