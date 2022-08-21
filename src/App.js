@@ -36,6 +36,7 @@ function App() {
 
   const resetBasket = () => {
     setBasket([])
+    setModal(false)
   }
 
   const modalToogle = () => {

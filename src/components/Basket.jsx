@@ -15,7 +15,7 @@ const Basket = ({ basket, products, total, resetBasket, modalToogle }) => {
                     )
                 }
             </div>
-            <button className="reset-btn" onClick={resetBasket || modalToogle} >sepeti sıfırla</button>
+            <button className="reset-btn" onClick={resetBasket} >sepeti sıfırla</button>
 
         </div>
     )
