@@ -40,8 +40,10 @@ const Product = ({ product, basket, setBasket, total, money }) => {
             <div className='image-container'>
                 <img src={product.image} alt={product.title} />
             </div>
-            <h3>{product.title}</h3>
-            <p>{moneyFormat(product.price)} ₺ </p>
+            <div className='info'>
+                <h3  > {product.title}</h3 >
+                <p>{moneyFormat(product.price)} ₺ </p>
+            </div>
             <div className='actions'>
                 <button className='sell-btn' onClick={removeBasket} disabled={!basketItem || basketItem.amount == 0} >Çıkart</button>
                 <span className='amount'>{basketItem && basketItem.amount || 0}</span>

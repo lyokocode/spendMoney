@@ -1,7 +1,8 @@
 import React from 'react'
 import { moneyFormat } from '../helpers'
+import { BsBasket } from "react-icons/bs"
 
-const Header = ({ money, total }) => {
+const Header = ({ money, total, modalToogle }) => {
     return (
         <header className='header'>
             {total > 0 && money - total !== 0 && (
@@ -13,6 +14,9 @@ const Header = ({ money, total }) => {
             {money - total === 0 && (
                 <>valla ülkeyi sen daha hızlı soydun. Tebrikler...</>
             )}
+
+            <BsBasket className='basket-icon' onClick={modalToogle} />
+
         </header>
     )
 }
